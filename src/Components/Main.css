@@ -1,0 +1,133 @@
+.dashboard, .dashboard-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .category {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .category h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .widgets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .widget {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    width: calc(33.33% - 10px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+  }
+  
+  .widget h3 {
+    margin-top: 0;
+    color: #444;
+  }
+
+  .cross-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .cross-icon::before,
+  .cross-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    top: 50%;
+    left: 0;
+  }
+  
+  .cross-icon::before {
+    transform: rotate(45deg);
+  }
+  
+  .cross-icon::after {
+    transform: rotate(-45deg);
+  }
+  
+  
+  .cross-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+  
+  .cross-icon:hover {
+    opacity: 1;
+  }
+  
+  form {
+    background-color: #e9e9e9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  input, select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .add-button:hover {
+    background-color: #45a049;
+  }
+  
+  .cancel-button {
+    background-color: #eb2e21;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .cancel-button:hover {
+    background-color: #bb3824;
+  }
